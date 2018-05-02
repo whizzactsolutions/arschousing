@@ -1,0 +1,138 @@
+<<html>
+<head>
+  <title></title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+ <div id="login_register" class="modal fade" role="dialog">
+  <div class="modal-dialog" style="margin-top: 100px;">
+    <!-- Modal content-->
+    <div class="modal-content modal-content-cus" id="login_model">
+      <div class="modal-body pad-0">
+          <div class="row">
+              <div class="col-sm-4 back-log_reg mod-log-hg">
+                  <br><br>
+                  <h3 class="col-white text-center"><b>Login Page</b></h3>
+                  <center>
+                      <img src="../user_assets/images/logos/logo.png" class="img-responsive push-to-bottom" width="70%">
+                  </center>
+                  <br>
+              </div>
+              <div class="col-sm-8 mod-log-hg">
+              <button type="button" class="close" data-dismiss="modal" style="margin-top: 15px; margin-right: 15px;"><p style="font-size: 18px;">✕</p></button>
+                  <br><br><br>
+                  <form action="/user/login" method="POST">
+                    <input type="hidden" name="_token" id="token" value="5Ii0e8zqZvhHHg0j1qE2c2ZW51g1rZahXyw8IKek">
+                   <div class="group">      
+                      <input type="text" name="txtEmail" class="input" required>
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="label">Enter Email / Mobile Number</label>
+                    </div>
+                   <div class="group" style="margin-top: -20px;">      
+                      <input type="password" name="txtPassword" class="input" required>
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="label">Enter Password</label>
+                       <p class="f14" style="margin-top: 10px; margin-left: 15px; position: fixed; left: 430px; top:131.5px;"><a href="#" onclick="shubham()"><b><font color="#DA3C3B">Forget Password</font></b></a></p>
+                  </div>
+                   <button class="btn btn-primary center-block lgn-btn" type="Submit">Login</button>
+                   <br>
+                   </form>
+                   <p class="text-center f18">new to myzumi? <button class="btn-link" onclick="signup_model()"><u><span class="col-key">Sign Up</span></u></button></p>
+                   <center><span style="color:red;"></span></center>
+              </div>    
+          </div>
+      </div>
+    </div>
+    <div class="modal-content modal-content-cus" id="signup_model">
+      <div class="modal-body pad-0">
+          <div class="row">
+              <div class="col-sm-4 back-log_reg mod-signup-hg">
+                  <br><br>
+                  <h3 class="col-white text-center"><b>Sign Up</b></h3>
+                  <center>
+                      <img src="../user_assets/images/logos/logo.png" class="img-responsive push-to-bottom" width="70%">
+                  </center>
+                  <br>
+              </div>
+              <div class="col-sm-8 mod-log-hg">
+                <img src="../user_assets/images/tools/left_arrow.png" width="25px" height="20px" style="margin-top:20px; cursor:pointer" onclick="login_model()">
+                 <button type="button" class="close" data-dismiss="modal" style="margin-top: 15px; margin-right: 15px;"><p style="font-size: 18px;">✕</p></button>
+                  <br><br>
+                  <!--<form action="control/userregister_control.php?mode=i" method="post">-->
+                  <div class="group">      
+                      <input type="text" class="input" name="firstname" id="firstname"  required>
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="label">First Name</label>
+                    </div>
+                  <div class="group" style="margin-top: -20px;">      
+                      <input type="text" class="input" name="lastname" id="lastname" required>
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="label">Last Name</label>
+                  </div>
+                  <div class="group" style="margin-top: -20px;">      
+                      <input type="text" class="input" name="mobile" id="mobile" maxlength="10" minlength="10" required>
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="label">Mobile No.</label>
+                  </div>
+                  <div class="group" style="margin-top: -20px;">      
+                      <input type="email" class="input" name="user_email" id="user_email" required>
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="label">Email ID</label>
+                  </div>
+                  <div class="group" style="margin-top: -20px;">      
+                      <input type="password" class="input" name="password" id="password" maxlength="10" minlength="6" required>
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="label">Password</label>
+                      <input type="hidden" name="_token" id="token" value="5Ii0e8zqZvhHHg0j1qE2c2ZW51g1rZahXyw8IKek">
+                  </div>
+                  <button class="btn center-block lgn-btn" type="button" onclick="getregisterdata()" style="color:white;">Submit</button><center><span id="results" style="color:red;"></span></center>
+          <center><span style="color:red;"></span></center>
+                <!-- </form>-->
+              </div>    
+          </div>
+      </div>
+    </div>  
+    <div class="modal-content modal-content-cus" id="forget_model">
+        <div class="modal-body pad-0">
+           <div class="row">
+              <div class="col-sm-4 back-log_reg mod-log-hg">
+                  <br><br>
+                  <h3 class="col-white text-center"><b>Password Recovery</b></h3>
+                  <center>
+                      <img src="../user_assets/images/logos/logo.png" class="img-responsive push-to-bottom" width="70%">
+                  </center>
+                  <br>
+              </div>
+              <div class="col-sm-8 mod-log-hg">
+                  <img src="../user_assets/images/tools/left_arrow.png" width="25px" height="20px" style="margin-top:20px; cursor:pointer" onclick="login_model()">
+              <button type="button" class="close" data-dismiss="modal" style="margin-top: 15px; margin-right: 15px;"><p style="font-size: 18px;">✕</p></button>
+                  <br><br><br>
+                   <div class="group">      
+                      <input type="text" class="input" name="forgetpassemail" id="forgetpassemail" required>
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label class="label">Registered Email ID</label>
+                    </div>
+                    <input type="hidden" name="_token" id="token" value="5Ii0e8zqZvhHHg0j1qE2c2ZW51g1rZahXyw8IKek">
+                   <button class="btn btn-primary center-block lgn-btn" type="button" onclick="getforgetpassemail()">Submit</button><center><span id="resetresult" style="color:red;"></span></center><center><span style="color:red;"></span></center>
+                   <br>
+              </div>    
+          </div>
+        </div>
+    </div>
+  </div>
+</div>    
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
+</body>
+</html>

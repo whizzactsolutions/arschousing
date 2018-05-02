@@ -1,0 +1,67 @@
+.s1
+{
+    
+
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-weight: bolder;
+
+  
+}
+.s{
+
+     position: absolute;
+    top: 90px;
+    left: 40px;
+    color: white;
+    font-weight: bolder;
+
+  }
+.cust-header3
+{
+    color:black;
+    margin-left:12px;
+    padding-top:20px;
+}
+.cust-para
+{
+    color:black;
+    margin-left:12px;
+    padding-top:10px;
+}
+.font-14
+{
+    font-family: 'Sofia', cursive;
+
+}
+.cust-inputtext
+{
+    border-radius: 0; background-color: transparent;border: 2px solid #415B75;
+}
+
+.exa {
+color: white;
+    font-weight: 100%;  
+}
+::placeholder
+{
+    color: white;
+    opacity: 1;
+}
+.centered {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered1 {
+    padding-top: -10px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

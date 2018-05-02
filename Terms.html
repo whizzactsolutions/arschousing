@@ -1,0 +1,303 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/brickstone.css" />
+          <link rel="stylesheet" href="assets/css/Buy.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Cookie|Courgette|Jua|Nunito|Righteous|Source+Sans+Pro" rel="stylesheet">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+  <style>
+  .close
+      {
+          font-size: 30px;
+      }
+  </style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top cus-head-back">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#cus-header">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+              </button>
+              <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <div class="collapse navbar-collapse" id="cus-header">
+              <ul class="nav navbar-nav">
+                  <li class="hover-li font-2"><a href="Index.html">HOME</a></li>
+                  <li class="hover-li font-2"><a href="Buy.html">BUY</a></li>
+                  <li class="hover-li font-2"><a href="Rent.html">RENT</a></li>
+                  <li class="hover-li font-2"><a href="Sell.html">SELL</a></li>
+                  <li class="hover-li font-2"><a href="RentOut.html">RENT OUT</a></li>
+                  <li class="hover-li font-2"><a href="Contact.html">CONTACT</a></li>
+                  <li class="hover-li font-2"><a href="About.html">ABOUT</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <button class="cus-btn-login" style="margin-top: 6px;" href="#signup" data-toggle="modal" data-target="#myModal">Login &frasl; Signup</button>
+              </ul>
+            </div>
+        </div>
+    </nav>
+     <div class="modal fade" id="myModal" style="opacity: 0.9;" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                    
+      <!-- Modal content-->
+               <div class="modal-content">
+                    <div class="bs-example bs-example-tabs" style="padding-top:30px;">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                        <ul id="myTab" class="nav nav-tabs">
+
+              <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+              <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+              <li class=""><a href="#why" data-toggle="tab">Forgot Pass?</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="modal-body">
+        <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in" id="why">
+          
+            <form action="" class="form-horizontal">
+                                               
+                <div class="control-group">
+              <label class="control-label" for="userid">Name:</label>
+              <div class="controls">
+                <input id="userid" name="userid" class="form-control" type="text" placeholder="Enter user name" class="input-large" required="">
+              </div>
+            </div>
+            
+                                               
+                <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+                <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+              </div>
+            </div>
+                      
+                    </form>
+
+        </div>
+        <div class="tab-pane fade active in" id="signin">
+            
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign In Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">Name:</label>
+              <div class="controls">
+                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="Enter user name" class="input-medium" required="true">
+              </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="passwordinput">Password:</label>
+              <div class="controls">
+                <input required="true" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="Enter Password" class="input-medium">
+              </div>
+            </div>
+
+            <!-- Multiple Checkboxes (inline) -->
+            <div class="control-group" style="margin-left:30px;">
+              <label class="control-label" for="rememberme"></label>
+              <div class="controls">
+                <label class="checkbox inline" for="rememberme-0">
+                  <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
+                  Remember me
+                </label>
+              </div>
+            </div>
+
+            <div class="control-group" style="margin-left:10px;" id="why">
+              <label class="control-label" for="forgot"></label>
+              <div class="controls">
+          <a href="#why" id="why">Forgot Password?</a>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Sign In</button>
+                </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="signup">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign Up Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="Email">Email:</label>
+              <div class="controls">
+                <input id="Email" name="Email" class="form-control" type="text" placeholder="enter email address" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">Name:</label>
+              <div class="controls">
+                <input id="userid" name="userid" class="form-control" type="text" placeholder="Enter user name" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="password">Password:</label>
+              <div class="controls">
+                <input id="password" name="password" class="form-control" type="password" placeholder="Enter Password" class="input-large" required="">
+                <em>1-8 Characters</em>
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
+              <div class="controls">
+                <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="Re-Enter Password" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Multiple Radios (inline) -->
+            <br>
+            
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="confirmsignup"></label>
+              <div class="controls">
+<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Sign up</button>
+                </div>
+            </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+      </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+    
+	<img src="image/a2.jpg" alt="Bricktons" class="img-responsive" style="width:100%;height:60%;" />
+
+	<div class="container-fluid s" style="background:white;width:80%;color:black;opacity: 0.9;">
+<div style="margin-left:40px;font-family: Lucida Grande;">
+
+                   
+
+         <h2>Terms and Conditions</h2>
+    <p>This website is the property of Bricktons with its registered office on Hill Road, Bandra(W), Mumbai 400 050.</p>
+    <h3 class="subhead">Acceptance of Terms</h3>
+    <p>The following terms and conditions govern your access to and use of this website, including any content and services offered on or through this website. By using this Website, you accept and agree to follow these Terms of Use and our Privacy Policy, found at www.bricktons.com/Terms of Use. If you do not agree to these Terms of Use or the Privacy Policy, you must not access or use the Website.</p>
+    <h3 class="subhead">Copyright Notice</h3>
+    <p>This website or any portion of this website (including but not limited to the software, the photographs, property details, floor plans, content, any copyrighted material, trademarks or other proprietary information) is the exclusive property of Bricktons and is protected by India and international copyright laws. These items may not be copied, duplicated, distributed, displayed, reproduced, or transmitted, in any form or by any means including but not limited to electronic, mechanical, photocopying, recording, or otherwise for any commercial purposes without express written consent of Bricktons.</p>
+    <p>You may not frame or use framing techniques to enclose any trademark, logo, or other proprietary information (including images, photographs, text, page layout, or form) of Bricktons website without express written consent. You may not use any meta tags or any other "hidden text" utilising Bricktons name or trademarks without the express written consent of Bricktons.</p>
+    <h3 class="subhead">Website Modifications</h3>
+    <p>Bricktons reserves the right, in its sole discretion, to modify, alter or otherwise update these Terms at any time. Such modifications shall be effective immediately upon posting. By using this web site after we have posted notice of such modifications, alterations or updates, you agree to be bound by such revised Terms.</p>
+    <h3 class="subhead">Disclaimer</h3>
+    <p>Bricktons website is provided on an "as is" basis. Bricktons expressly disclaims all warranties of any kind, whether express or implied, statutory or otherwise, including but not limited to any warranties of merchantability, fitness for a particular purpose and non-infringement. </p>
+    <p>Bricktons disclaims all responsibility for any loss, injury, claim, liability or damage of any kind resulting from, arising out of or any way related to (a) any errors in or omissions from this website and the content, including but not limited to technical inaccuracies and typographical errors, (b) any third party web sites or content therein directly or indirectly accessed through links in this website, including but not limited to any errors in or omissions therefrom, (c) the unavailability of the website or any portion thereof, (d) your use of this website or (e) your use of any equipment or software in connection with the website.</p>
+    <h3 class="subhead">Indemnity and Release</h3>
+    <p>You shall indemnify and hold harmless Bricktons, its officers, directors, agents and employees, from any claim or demand, or actions including reasonable attorney's fees, made by any third party or penalty imposed due to or arising out of your breach of these Conditions of Use or any document incorporated by reference, or your violation of any law, rules, regulations or the rights of a third party.</p>
+    <p>You hereby expressly release Bricktons and/or any of its officers and representatives from any cost, damage, liability or other consequence of any of the actions/inactions of the vendors and specifically waiver any claims or demands that you may have in this behalf under any statute, contract or otherwise.</p>
+</div>
+<hr>
+         <footer class="page-footer font-small" style="padding-top:85px;">
+
+    <!--Footer Links-->
+    <div class="container">
+
+        <!--Grid row-->
+        <div class="row pt-5 mb-3 text-center d-flex justify-content-center" style="font-size:1vw;margin-left:80px;padding-top:40px;">
+
+            <!--Grid column-->
+            <div class="col-md-2 mb-1">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="About.html">About us</a>
+                </h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="Terms.html">Terms and condition </a>
+                </h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="Privacy.html">Privacy Policy</a>
+                </h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="Contact.html">Contact</a>
+                </h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="Feedback.html">Feedback</a>
+                </h6>
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        
+        <!--Grid row-->
+
+    </div>
+       
+
+</footer>
+
+        </div>
+
+
+  <div class="container-fluid" style="background-color: #2c3e50; padding: 1%; margin-top:820px;">
+					<div class="col-sm-8 col-xs-12">
+                        <p class="text-right">
+                            <script language=javascript>
+                              today=new Date();
+                              y0=today.getFullYear();
+                              document.write('<center><span style="font: 10pt arial,sans-serif;color:#fff;">Copyright &copy; '+y0+', Brickstone.co.in All Rights Reserved. | <a href="Privacy.html" style="color:#fff;"><u>Security Policy</U></a> | <a href="Terms.html" style="color:#fff;"><u>Terms & Conditions</u></a></span></center>');
+                            </script>
+                        </p>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<p style="font: 10pt arial,sans-serif;margin-right:20px;margin-top:12px;" class="text-right col-white">Design &amp; Developed By 
+				        <a href="http://www.whizzactsolutions.com" target="_blank" style="color:#fff;">WhizzActSolutions</a></p>
+					</div>
+               </div>
+     
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+</body>
+</html>

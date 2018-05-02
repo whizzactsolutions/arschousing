@@ -1,0 +1,331 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/brickstone.css" />
+      <link rel="stylesheet" href="assets/css/sell.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Cookie|Courgette|Jua|Nunito|Righteous|Source+Sans+Pro" rel="stylesheet">
+ 
+<style>
+     .close
+      {
+          font-size: 30px;
+      }
+    </style>
+</head>
+<body>
+ 
+        
+<nav class="navbar navbar-inverse navbar-fixed-top cus-head-back">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#cus-header">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+              </button>
+              <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <div class="collapse navbar-collapse" id="cus-header">
+              <ul class="nav navbar-nav">
+                  <li class="hover-li font-2"><a href="Index.html">HOME</a></li>
+                  <li class="hover-li font-2"><a href="Buy.html">BUY</a></li>
+                  <li class="hover-li font-2"><a href="Rent.html">RENT</a></li>
+                  <li class="hover-li font-2"><a href="Sell.html">SELL</a></li>
+                  <li class="hover-li font-2"><a href="RentOut.html">RENT OUT</a></li>
+                  <li class="hover-li font-2"><a href="Contact.html">CONTACT</a></li>
+                  <li class="hover-li font-2"><a href="About.html">ABOUT</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <button class="cus-btn-login" style="margin-top: 6px;" href="#signup" data-toggle="modal" data-target="#myModal">Login &frasl; Signup</button>
+              </ul>
+            </div>
+        </div>
+    </nav>
+     <div class="modal fade" id="myModal" style="opacity: 0.9;" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                    
+      <!-- Modal content-->
+               <div class="modal-content">
+                    <div class="bs-example bs-example-tabs" style="padding-top:30px;">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                        <ul id="myTab" class="nav nav-tabs">
+
+              <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+              <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+              <li class=""><a href="#why" data-toggle="tab">Forgot Pass?</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="modal-body">
+        <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in" id="why">
+          
+            <form action="" class="form-horizontal">
+                                               
+                <div class="control-group">
+              <label class="control-label" for="userid">Name:</label>
+              <div class="controls">
+                <input id="userid" name="userid" class="form-control" type="text" placeholder="Enter user name" class="input-large" required="">
+              </div>
+            </div>
+            
+                                               
+                <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+                <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+              </div>
+            </div>
+                      
+                    </form>
+
+        </div>
+        <div class="tab-pane fade active in" id="signin">
+            
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign In Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">Name:</label>
+              <div class="controls">
+                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="Enter user name" class="input-medium" required="true">
+              </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="passwordinput">Password:</label>
+              <div class="controls">
+                <input required="true" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="Enter Password" class="input-medium">
+              </div>
+            </div>
+
+            <!-- Multiple Checkboxes (inline) -->
+            <div class="control-group" style="margin-left:30px;">
+              <label class="control-label" for="rememberme"></label>
+              <div class="controls">
+                <label class="checkbox inline" for="rememberme-0">
+                  <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
+                  Remember me
+                </label>
+              </div>
+            </div>
+
+            <div class="control-group" style="margin-left:10px;" id="why">
+              <label class="control-label" for="forgot"></label>
+              <div class="controls">
+          <a href="#why" id="why">Forgot Password?</a>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Sign In</button>
+                </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="signup">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign Up Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="Email">Email:</label>
+              <div class="controls">
+                <input id="Email" name="Email" class="form-control" type="text" placeholder="enter email address" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">Name:</label>
+              <div class="controls">
+                <input id="userid" name="userid" class="form-control" type="text" placeholder="Enter user name" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="password">Password:</label>
+              <div class="controls">
+                <input id="password" name="password" class="form-control" type="password" placeholder="Enter Password" class="input-large" required="">
+                <em>1-8 Characters</em>
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
+              <div class="controls">
+                <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="Re-Enter Password" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Multiple Radios (inline) -->
+            <br>
+            
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="confirmsignup"></label>
+              <div class="controls">
+<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Sign up</button>
+                </div>
+            </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+      </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+	
+    <div class="container-fluid cus-slider">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img class="abc" src="image/a2.jpg" alt="Los Angeles" alt="Chicago" style="width:100%;height:50%">
+        <div class="carousel-caption">
+          <h2 class="font-5 " style="margin-top: -10%;">Rent your property with Bricktons</h2><br>
+        <p class="font-2 f18" style="font-weight: 100;">Simply give us your contact information below <br>and our agent will call you for further information <br>about selling your property</p>
+        <p class="font-2 f18" style="font-weight: 100;">You can also call us, Mon to Sat from 9 am to 8 pm at (022) 2641 2600.</p>
+   
+        </div>
+      </div>
+    </div>
+
+      </div>
+        </div>
+    
+            <div class="container-fluid " style="background:#2c3e50;">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 hover">
+                     <form action="" class="form-horizontal" style="margin-left:10px;padding-top:30px;">
+                                               <div class="form-group">
+                                                     <label for="user-num" class="col-lg-5 control-label exa f20 font-6"  >Title</label>
+                                                     <div class="col-lg-5" >
+                                                        <select class="form-control cust-inputtext exa" style="">
+                                                        <option value="one" class="cus-back-key exa">Mr</option>
+                                                        <option value="two" class="cus-back-key exa">Mrs</option>
+                                                        <option value="three" class="cus-back-key exa">Ms</option>
+                                                    </select>
+                        </div>
+                        </div>
+                        <div class="form-group exa"  >
+                            <label for="user-name" class="col-lg-5 control-label exa f20 font-6">First Name
+                                
+                            </label>
+                            <div class="col-lg-6 exa ">
+                                <input type="text" class="form-control cust-inputtext exa" id="user-name" placeholder="Enter User Name" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                            <label for="user-name" class="col-lg-5 control-label exa f20 font-6">Last Name
+                                
+                            </label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control cust-inputtext exa" id="Last-name" placeholder="Enter User last Name" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                            <label for="user-name" class="col-lg-5 control-label exa f20 font-6">Phone
+                                
+                            </label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control cust-inputtext exa" id="phone" placeholder="Enter User Phone" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="user-email" class="col-lg-5 control-label exa f20 font-6">Alternate phone</label>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="Enter alternate number" id="al-phone" required="true" class="form-control cust-inputtext exa">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="user-text" class="col-lg-5 control-label exa f20 font-6">Message</label>
+                            <div class="col-lg-6">
+                            <textarea type="text" row="8" col="8" placeholder="Message" id="user-text" class="form-control cust-inputtext exa">     
+                            </textarea>   
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                            <button type="submit" target="" id="submit" class="col-lg-3 col-lg-offset-6 cus-btn-search">Submit</button>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <div class="container-fluid">
+           <center> <h2>Why use BRICKTONS to sell your property</h2> </center>
+                <br><div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-7 hover">
+                                <div class="row">
+                                    <div class="col-sm-4 hover">
+                                    <center><h3>We do more and better marketing</h3></center>
+                                    <p style="padding-top: 70px;" class="f16 font-2 hover text-justify">Most buyers today start their property search on the web. We make sure that your property is advertised everywhere the buyers are looking - our own website, other real estate websites and traditional medium. (We don't disclose theexact address or any personal details). This extensive advertising gives your property, exposure to a much larger number of potential buyers. For every property listed with us, we bring out its key features and uniqueness using high quality photographs, detailed description and a floor plan.</p>
+                                    </div>
+                                    <div class="col-sm-4 hover">
+                                    <center><h3>We promote your property to a much larger number of potential buyers</h3></center>
+                                       <p style="padding-top: 20px;" class="f16 font-2 hover text-justify">We have invested heavily in technology to build our own state-of-the-art real estate business applications and a quality website, to enable us to easily and quickly promote your property to significantly more potential buyers than any traditional agent possibly can.Also, when it comes to buying, a lot of the potential buyers are not local. Many of them are non residents and outside investors. Using our technology and a wide network of trusted agents, we are able to directly market your property to this pool of buyers.</p>
+                                    </div>
+                                    <div class="col-sm-4 hover" >
+                                    <center><h3>Our agents are with you every step of the way</h3></center>
+                                    <p style="padding-top: 40px;" class="f16 font-2 hover text-justify">Our agents are trained and experienced professionals who assist you right from the beginning to the end. We help with setting the best possible price for your property, finding a suitable tenant, negotiating pricing and terms, drafting of agreements, property registration and police verification process. Once you decide to list your property with us, you can be assured that our agents will give you unparalleled professional service. Our agents are backed by a strong team to get the best possible price for your property.</p>     
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="row">
+                                <div class="col-sm-6 hover">
+                                    <center><h3>Local area expertise</h3></center>
+                                   <p style="padding-top: 90px;" class="f16 font-2 hover text-justify">We assign your property to an agent who is dedicated to the local area. As a result, our agents develop in-depth local experience and expertise. This helps the agents stay focussed and market your property better to prospective buyers.</p> </div>
+                                    <div class="col-sm-6 hover">
+                                    <center><h3>We make it easy</h3></center>
+                                  <p style="padding-top: 90px;" class="f16 font-2 hover text-justify">Our primary goal is to make it as easy as possible for you. We constantly reinforce this principle in our staff training. We continually improve our processes and technology, to provide our clients with a superior, hassle-free experience.Request a call back</p>    
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+       <!--Footer-->
+<hr>
+      <div class="container-fluid" style="background-color: #2c3e50; padding: 1%; margin-top:20px;">
+					<div class="col-sm-8 col-xs-12">
+                        <p class="text-right">
+                            <script language=javascript>
+                              today=new Date();
+                              y0=today.getFullYear();
+                              document.write('<center><span style="font: 10pt arial,sans-serif;color:#fff;">Copyright &copy; '+y0+', Brickstone.co.in All Rights Reserved. | <a href="Privacy.html" style="color:#fff;"><u>Security Policy</U></a> | <a href="Terms.html" style="color:#fff;"><u>Terms & Conditions</u></a></span></center>');
+                            </script>
+                        </p>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<p style="font: 10pt arial,sans-serif;margin-right:20px;margin-top:12px;" class="text-right col-white">Design &amp; Developed By 
+				        <a href="http://www.whizzactsolutions.com" target="_blank" style="color:#fff;">WhizzActSolutions</a></p>
+					</div>
+               </div>
+     
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+
+    </body>
+</html>

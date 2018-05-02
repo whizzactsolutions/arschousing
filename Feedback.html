@@ -1,0 +1,373 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/brickstone.css" />
+      <link rel="stylesheet" href="assets/css/sell.css" />
+    <link rel="stylesheet" href="assets/css/tp.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Cookie|Courgette|Jua|Nunito|Righteous|Source+Sans+Pro" rel="stylesheet">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+<style>
+     .close
+      {
+          font-size: 30px;
+      }</style>
+</head>
+<body>
+ 
+        
+<nav class="navbar navbar-inverse navbar-fixed-top cus-head-back">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#cus-header">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+              </button>
+              <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <div class="collapse navbar-collapse" id="cus-header">
+              <ul class="nav navbar-nav">
+                  <li class="hover-li font-2"><a href="Index.html">HOME</a></li>
+                  <li class="hover-li font-2"><a href="Buy.html">BUY</a></li>
+                  <li class="hover-li font-2"><a href="Rent.html">RENT</a></li>
+                  <li class="hover-li font-2"><a href="Sell.html">SELL</a></li>
+                  <li class="hover-li font-2"><a href="RentOut.html">RENT OUT</a></li>
+                  <li class="hover-li font-2"><a href="Contact.html">CONTACT</a></li>
+                  <li class="hover-li font-2"><a href="About.html">ABOUT</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <button class="cus-btn-login" style="margin-top: 6px;" href="#signup" data-toggle="modal" data-target="#myModal">Login &frasl; Signup</button>
+              </ul>
+            </div>
+        </div>
+    </nav>
+     <div class="modal fade" id="myModal" style="opacity: 0.9;" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                    
+      <!-- Modal content-->
+               <div class="modal-content">
+                    <div class="bs-example bs-example-tabs" style="padding-top:30px;">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                        <ul id="myTab" class="nav nav-tabs">
+
+              <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+              <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+              <li class=""><a href="#why" data-toggle="tab">Forgot Pass?</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="modal-body">
+        <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in" id="why">
+          
+            <form action="" class="form-horizontal">
+                                               
+                <div class="control-group">
+              <label class="control-label" for="userid">Name:</label>
+              <div class="controls">
+                <input id="userid" name="userid" class="form-control" type="text" placeholder="Enter user name" class="input-large" required="">
+              </div>
+            </div>
+            
+                                               
+                <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+                <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+              </div>
+            </div>
+                      
+                    </form>
+
+        </div>
+        <div class="tab-pane fade active in" id="signin">
+            
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign In Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">Name:</label>
+              <div class="controls">
+                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="Enter user name" class="input-medium" required="true">
+              </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="passwordinput">Password:</label>
+              <div class="controls">
+                <input required="true" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="Enter Password" class="input-medium">
+              </div>
+            </div>
+
+            <!-- Multiple Checkboxes (inline) -->
+            <div class="control-group" style="margin-left:30px;">
+              <label class="control-label" for="rememberme"></label>
+              <div class="controls">
+                <label class="checkbox inline" for="rememberme-0">
+                  <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
+                  Remember me
+                </label>
+              </div>
+            </div>
+
+            <div class="control-group" style="margin-left:10px;" id="why">
+              <label class="control-label" for="forgot"></label>
+              <div class="controls">
+          <a href="#why" id="why">Forgot Password?</a>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Sign In</button>
+                </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="signup">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign Up Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="Email">Email:</label>
+              <div class="controls">
+                <input id="Email" name="Email" class="form-control" type="text" placeholder="enter email address" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">Name:</label>
+              <div class="controls">
+                <input id="userid" name="userid" class="form-control" type="text" placeholder="Enter user name" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="password">Password:</label>
+              <div class="controls">
+                <input id="password" name="password" class="form-control" type="password" placeholder="Enter Password" class="input-large" required="">
+                <em>1-8 Characters</em>
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
+              <div class="controls">
+                <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="Re-Enter Password" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Multiple Radios (inline) -->
+            <br>
+            
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="confirmsignup"></label>
+              <div class="controls">
+<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Sign up</button>
+                </div>
+            </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+      </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+	
+    <div class="container-fluid cus-slider">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img class="abc" src="image/a2.jpg" alt="Los Angeles" alt="Chicago" style="width:100%;height:50%">
+        <div class="carousel-caption">
+          <h2 class="font-5 " style="margin-top: -10%;">Feedback</h2><br>
+        <p class="font-2 f18" style="font-weight: 100;">We are constantly working to improve our services and our website. Fill our feedback form below to give us any ideas or suggestions to help us serve you better.
+
+</p>
+   
+        </div>
+      </div>
+    </div>
+
+      </div>
+        </div>
+    <br>
+            
+         
+            <div class="container-fluid " style="background:#2c3e50;">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 hover">
+                     <form action="" class="form-horizontal" style="margin-left:10px;padding-top:30px;">
+                             
+                         <div class="form-group">
+                                                     <label for="user-num" class="col-lg-5 control-label exa f20 font-6"  >Subject</label>
+                                                     <div class="col-lg-5" >
+                                                        <select class="form-control cust-inputtext exa" style="">
+                                                        <option value="one" class="cus-back-key exa">General Inquiry</option>
+                                                        <option value="two" class="cus-back-key exa">Feedback</option>
+                                                        <option value="three" class="cus-back-key exa">Sell my property</option>
+                                                            <option value="four" class="cus-back-key exa">Rent out my property</option>
+                                                        <option value="five" class="cus-back-key exa">Find a property to buy</option>
+                                                            <option value="six" class="cus-back-key exa">Find a property to rent</option>
+                                                            <option value="seven" class="cus-back-key exa">Others</option>
+                                                    </select>
+                        </div>
+                        </div>                  
+                         <div class="form-group">
+                            <label for="user-text" class="col-lg-5 control-label exa f20 font-6">Message</label>
+                            <div class="col-lg-6">
+                            <textarea type="text" row="8" col="8" placeholder="Message" id="user-text" class="form-control cust-inputtext exa">     
+                            </textarea>   
+                            </div>
+                        </div>
+                        
+                         <div class="form-group">
+                                                     <label for="user-num" class="col-lg-5 control-label exa f20 font-6"  >Title</label>
+                                                     <div class="col-lg-5" >
+                                                        <select class="form-control cust-inputtext exa" style="">
+                                                        <option value="one" class="cus-back-key exa">Mr</option>
+                                                        <option value="two" class="cus-back-key exa">Mrs</option>
+                                                        <option value="three" class="cus-back-key exa">Ms</option>
+                                                    </select>
+                        </div>
+                        </div>
+                        <div class="form-group exa"  >
+                            <label for="user-name" class="col-lg-5 control-label exa f20 font-6">First Name
+                                
+                            </label>
+                            <div class="col-lg-6 exa ">
+                                <input type="text" class="form-control cust-inputtext exa" id="user-name" placeholder="Enter User Name" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                            <label for="user-name" class="col-lg-5 control-label exa f20 font-6">Last Name
+                                
+                            </label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control cust-inputtext exa" id="Last-name" placeholder="Enter User last Name" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                            <label for="user-name" class="col-lg-5 control-label exa f20 font-6">Phone
+                                
+                            </label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control cust-inputtext exa" id="phone" placeholder="Enter User Phone" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="user-email" class="col-lg-5 control-label exa f20 font-6">Alternate phone</label>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="Enter alternate number" id="al-phone" required="true" class="form-control cust-inputtext exa">
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                            <button type="submit" target="" id="submit" class="col-lg-3 col-lg-offset-6 cus-btn-search">Submit</button>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>   
+             <footer class="page-footer font-small" style="padding-top:85px;">
+
+    <!--Footer Links-->
+    <div class="container-fluid">
+
+        <!--Grid row-->
+        <div class="row pt-5 mb-3 text-center d-flex justify-content-center" style="font-size:1vw;margin-left:80px;padding-top:40px;">
+
+            <!--Grid column-->
+            <div class="col-md-2 mb-1">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="About.html">About us</a>
+                </h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="Terms.html">Terms and condition </a>
+                </h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="Privacy.html">Privacy Policy</a>
+                </h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="Contact.html">Contact</a>
+                </h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <a href="Feedback.html">Feedback</a>
+                </h6>
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        
+        <!--Grid row-->
+
+    </div>
+
+  
+
+</footer>
+      <div class="container-fluid" style="background-color: #2c3e50; padding: 1%; margin-top:20px;">
+					<div class="col-sm-8 col-xs-12">
+                        <p class="text-right">
+                            <script language=javascript>
+                              today=new Date();
+                              y0=today.getFullYear();
+                              document.write('<center><span style="font: 10pt arial,sans-serif;color:#fff;">Copyright &copy; '+y0+', Brickstone.co.in All Rights Reserved. | <a href="Privacy.html" style="color:#fff;"><u>Security Policy</U></a> | <a href="Terms.html" style="color:#fff;"><u>Terms & Conditions</u></a></span></center>');
+                            </script>
+                        </p>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<p style="font: 10pt arial,sans-serif;margin-right:20px;margin-top:12px;" class="text-right col-white">Design &amp; Developed By 
+				        <a href="http://www.whizzactsolutions.com" target="_blank" style="color:#fff;">WhizzActSolutions</a></p>
+					</div>
+               </div>
+     
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
+    </body>
+</html>
